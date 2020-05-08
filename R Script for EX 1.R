@@ -1,0 +1,16 @@
+clock <-Sys.time()
+print(clock)
+watch1 <-Sys.time()
+watch2 <-Sys.time()
+print (watch2 - watch1)
+random1 <- readline(prompt = "give me a word ")
+print (random1)
+library(qdapDictionaries)
+random2 <- readline(prompt = "give me a word ")
+is.word  <- random2 %in% GradyAugmented
+if(is.word==TRUE) print (random2)
+if(is.word==FALSE) random2 <- readline(prompt = "give me a word ")
+
+p1 <-readline(prompt = "give me a word ")
+p2 <-readline(prompt = "give me a word ")
+print (c(p1, p2))
